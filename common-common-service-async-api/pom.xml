@@ -8,16 +8,26 @@
     <version>1.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
-
+  
 	<groupId>com.anygine.common.common</groupId>
-	<artifactId>common-common-api</artifactId>
+	<artifactId>common-common-service-async-api</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<packaging>jar</packaging>
-	<name>Anygine Common Common API Component</name>
-	<description>Anygine Common Common API Component</description>
+	<name>Anygine Common Common Async Service API Component</name>
+	<description>Anygine Common Common Async Service API Component</description>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.anygine.common.common</groupId>
+			<artifactId>common-common-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.anygine.common.common</groupId>
+			<artifactId>common-common-service-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

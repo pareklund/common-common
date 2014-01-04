@@ -10,14 +10,19 @@
   </parent>
 
 	<groupId>com.anygine.common.common</groupId>
-	<artifactId>common-common-api</artifactId>
+	<artifactId>common-common-geometry-api</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<packaging>jar</packaging>
-	<name>Anygine Common Common API Component</name>
-	<description>Anygine Common Common API Component</description>
+	<name>Anygine Common Common Geometry API Component</name>
+	<description>Anygine Common Common Geometry API Component</description>
 
 	<dependencies>
+    <dependency>
+      <groupId>com.anygine.common.common</groupId>
+      <artifactId>common-common-entity-api</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

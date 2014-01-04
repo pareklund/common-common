@@ -10,12 +10,12 @@
   </parent>
 
 	<groupId>com.anygine.common.common</groupId>
-	<artifactId>common-common-api</artifactId>
+	<artifactId>common-common-metrics-callee</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<packaging>jar</packaging>
-	<name>Anygine Common Common API Component</name>
-	<description>Anygine Common Common API Component</description>
+	<name>Anygine Common Common Metrics Callee Component</name>
+	<description>Anygine Common Common Metrics Callee Component</description>
 
 	<dependencies>
 		<dependency>

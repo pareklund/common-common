@@ -7,16 +7,16 @@
 
   <parent>
     <groupId>com.anygine.common.build</groupId>
-    <artifactId>top-parent</artifactId>
+    <artifactId>anygine-top-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <groupId>com.anygine.common.common</groupId>
-  <artifactId>module</artifactId>
+  <artifactId>common-common-module</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Common Common Module</name>
+  <name>Anygine Common Common Module</name>
   <url>http://maven.apache.org</url>
 
   <scm>
@@ -30,6 +30,21 @@
   
   <modules>
     <module>common-common-api</module>
+    <module>common-common-entity-api</module>
+    <module>common-common-entity-base</module>
+    <module>common-common-function-callee</module>
+    <module>common-common-geometry-api</module>
+    <module>common-common-inject-api</module>
+    <module>common-common-input-api</module>
+    <module>common-common-job-callee</module>
+    <module>common-common-metrics-callee</module>
+    <module>common-common-resource-api</module>
+    <module>common-common-rules-callee</module>
+    <module>common-common-service-api</module>
+    <module>common-common-service-async-api</module>
+    <module>common-common-service-async-base</module>
+    <module>common-common-service-base</module>
+    <module>common-common-util</module>    
   </modules>
   
   <!-- TODO: Import definitions below from module-common-pom.xml (or similar) -->

@@ -10,14 +10,28 @@
   </parent>
 
 	<groupId>com.anygine.common.common</groupId>
-	<artifactId>common-common-api</artifactId>
+	<artifactId>common-common-input-api</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<packaging>jar</packaging>
-	<name>Anygine Common Common API Component</name>
-	<description>Anygine Common Common API Component</description>
+	<name>Anygine Common Common Input API Component</name>
+	<description>Anygine Common Common Input API Component</description>
 
 	<dependencies>
+    <dependency>
+      <groupId>com.anygine.common.common</groupId>
+      <artifactId>common-common-inject-api</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.anygine.common.common</groupId>
+      <artifactId>common-common-geometry-api</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.enterprise</groupId>
+      <artifactId>cdi-api</artifactId>
+    </dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
