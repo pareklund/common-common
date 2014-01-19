@@ -8,7 +8,7 @@ public interface EntityService extends JsonWritableService {
 
   <T> Class<T> getEntityClass(Json.Object jsonObj);
 
-//  <T> EntityInternal<T> getInstance(Class<T> clazz, Json.Object entityObj);
+  <T> EntityInternal<T> getInstance(Class<T> clazz, Json.Object entityObj);
 
   <T> EntityInternal<T> getInstance(Json.Object entityObj);
 }

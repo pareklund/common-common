@@ -263,6 +263,20 @@ public class JsonWritableHelper {
   }
 
   public static final <T extends Object> void readCollection(
+          Collection<T> collectionToRead, Json.Object collectionObj) {
+    collectionToRead.clear();
+    Json.Object contentsObj = collectionObj.getObject("contents");
+    if (contentsObj != null) {
+      Json.Array contentsArray = contentsObj.getArray("items");
+      for (int i = 0; i < contentsArray.length(); i++) {
+        Json.Object itemObj = contentsArray.getObject(i);
+        collectionToRead.add((T) jsonWritableFactory.newInstance(
+                entityService.getClass(itemObj), itemObj));
+      }
+    }
+  }
+
+  public static final <T extends Object> void readCollection(
       Class<T> clazz, Collection<T> collectionToRead, 
       Json.Object collectionObj) {
     collectionToRead.clear();
