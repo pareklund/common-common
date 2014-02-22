@@ -42,7 +42,12 @@ public class SoundWithPath implements Sound {
   public String getPath() {
     return path;
   }
-  
+
+  @Override
+  public boolean prepare() {
+    return sound.prepare();
+  }
+
   @Override
   public boolean play() {
     return sound.play();
