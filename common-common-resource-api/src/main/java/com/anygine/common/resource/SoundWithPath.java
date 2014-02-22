@@ -5,7 +5,7 @@ import java.util.Map;
 
 import playn.core.PlayN;
 import playn.core.Sound;
-import playn.core.ResourceCallback;
+import playn.core.util.Callback;
 
 import com.anygine.core.common.client.annotation.Embeddable;
 
@@ -69,7 +69,7 @@ public class SoundWithPath implements Sound {
   }
 
   @Override
-  public void addCallback(ResourceCallback<? super Sound> callback) {
+  public void addCallback(Callback<? super Sound> callback) {
     sound.addCallback(callback);
   }
 

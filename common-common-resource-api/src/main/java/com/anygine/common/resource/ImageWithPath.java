@@ -3,7 +3,6 @@ package com.anygine.common.resource;
 import playn.core.Image;
 import playn.core.Pattern;
 import playn.core.PlayN;
-import playn.core.ResourceCallback;
 import playn.core.gl.GL20;
 import playn.core.gl.Scale;
 import playn.core.util.Callback;
@@ -58,7 +57,7 @@ public class ImageWithPath implements Image {
   }
 
   @Override
-  public void addCallback(ResourceCallback<? super Image> callback) {
+  public void addCallback(Callback<? super Image> callback) {
     image.addCallback(callback);
   }
 
