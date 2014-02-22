@@ -23,6 +23,7 @@
     <url>git://nasty:8080/git/</url>
     <connection>scm:git:ssh://admin@nasty/share/git/common-common.git</connection>
     <developerConnection>scm:git:ssh://admin@nasty/share/git/common-common.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencies>
